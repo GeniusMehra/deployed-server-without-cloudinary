@@ -48,7 +48,8 @@ try {
         })}
     task.isCompleted=!task.isCompleted;
     // console.log(task.isCompleted)
-    // await Task.updateOne({})
+    // await task.updateOne({isCompleted:!task.isCompleted})
+    await task.save()
     res.status(201).json({
         success:true,
         message:"Updated",

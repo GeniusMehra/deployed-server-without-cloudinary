@@ -31,5 +31,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(process.env.PORT,()=>{
-    console.log("Server is working")
+    console.log(`Server is working on Port ${process.env.PORT} in ${process.env.DEVELOPMENT} mode`)
 })
