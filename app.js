@@ -23,7 +23,7 @@ app.use(cors({
 
 app.use(userRouter)
 app.use("/task",taskRouter)
-app.use(session({ secret: 'cats', resave: false, saveUninitialized: true }));
+app.use(session({ secret: 'catsss', resave: false, saveUninitialized: true }));
 
 connectDB()
 
@@ -49,7 +49,10 @@ app.get(
   
   app.get(
     "/login",
-    passport.authenticate("google")
+    passport.authenticate("google",{
+      successRedirect:"https://google.com"
+    }
+    )
   );
 
 app.listen(process.env.PORT,()=>{
