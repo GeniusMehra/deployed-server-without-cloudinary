@@ -1,8 +1,8 @@
 import { Strategy as GoogleStrategy } from "passport-google-oauth2";
 import passport from "passport";
 
-const GOOGLE_CLIENT_ID = "612271809968-eu4autg545lk7spksm29rv0r0s7bbrqo.apps.googleusercontent.com";
-const GOOGLE_CLIENT_SECRET = "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";
+const GOOGLE_CLIENT_ID = "612271809968-ubflja6th8852dffm08kcivrrt969eou.apps.googleusercontent.com";
+const GOOGLE_CLIENT_SECRET = "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";
 
 export const connectPassport = () => {
   passport.use(
