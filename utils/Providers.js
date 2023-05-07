@@ -10,7 +10,7 @@ export const connectPassport = () => {
       {
         clientID:GOOGLE_CLIENT_ID,
         clientSecret:GOOGLE_CLIENT_SECRET,
-        callbackURL: "/login",
+        callbackURL: "https://myfirstapp-157r.onrender.com/login",
       },
       async function (accessToken, refreshToken, profile, done) {
         console.log(profile)
